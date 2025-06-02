@@ -18,11 +18,17 @@ pattern_3 = "-_"
 
 result = ""
 
-for n in range(1,3):
-    result += " "*(5-n) +pattern_1*n
-    result += pattern_2 * 2 + "_"  
-    result += " "*(5-n) +pattern_1*n
-    pattern_1 +="**"
+for n in range(1,6,2):
+    result += " " *int(n)
+    result += pattern_1 * n
     result += "\n"
+    # result += pattern_2 * 2 + "_"  
+    # result += pattern_1 * n
+
+# for n in range(3,0,-2):
+#     result += pattern_1 * n
+#     result += "\n"
+    # result += pattern_2 * 2 + "_"  
+    # result += pattern_1 * n
 
 print(result)
