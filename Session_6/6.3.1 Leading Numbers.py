@@ -17,22 +17,26 @@ Ejercicio requerido (tarea 9)
 numchain = input("Type the num chain: ")
 numchain = numchain.split(" ")
 numchain = numchain[::-1]
-prev = 0
+prev = list()
 i = 0
 result = list()
 for x in numchain:
+    prev.append(x)
     if i == 0:
         i += 1
         continue
-    
-    if int(x) > int(prev):
+    add = True
+    for y in prev:
+        if int(x) < int(y):
+            add = False
+            break
+    if add:
         result.append(x)
-
-    prev = x
+    
     i += 1
     
 numchain2 = ""
-for y in result:
-    numchain2 += y + " "
+for x in result:
+    numchain2 += x + " "
 
 print(numchain2)

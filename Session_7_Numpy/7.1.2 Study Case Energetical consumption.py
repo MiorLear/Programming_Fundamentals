@@ -75,9 +75,11 @@ Cuestionario.
 
 # Pregunta 1
 
-print (f"El consumo del hogar 5 el día viernes es {consumo[4,4]}")
-print (f"Consumo de los ultimos 3 hogares el domingo {consumo[-3:,6]}")
-print(f"Promedio de consumo en fines de semana: {np.mean(consumo[:, [5, 6]]):.2f}")
+print (f"El consumo del hogar 5 el día viernes es {consumo[4,4]} kWh")
+print (f"Consumo de los ultimos 3 hogares el domingo {consumo[-3:,6]} kWh")
+
+print(f"Promedio de consumo en fines de semana: {np.mean(consumo[:, [5, 6]]):.2f} kWh")
+
 desviaciones_por_dia = np.std(consumo, axis=0)
 dia_mayor_desviacion = np.argmax(desviaciones_por_dia)
 print(f"El dia con mayor desviacion estandar es el dia {dia_mayor_desviacion} con un valor de {desviaciones_por_dia[dia_mayor_desviacion]:.2f}")
