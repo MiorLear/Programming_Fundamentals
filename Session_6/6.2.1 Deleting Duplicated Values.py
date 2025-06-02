@@ -1,4 +1,14 @@
 '''
+Session:      Session 6        
+Exercise:     Deleting Duplicated Values
+Description:  Delete the duplicated values of a string chain.
+
+Author:       Miguel Orlando Ledezma Arévalo
+Date:         2025-06-02
+Status:       [ Finished ]
+'''
+
+'''
 Dada una lista ingresada por el usuario, elimina los elementos duplicados
 manteniendo la primera aparición de cada número.
 Entrada:

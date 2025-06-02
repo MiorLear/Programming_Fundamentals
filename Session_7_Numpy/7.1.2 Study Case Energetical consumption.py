@@ -1,6 +1,14 @@
+'''
+Session:      Session 7        
+Exercise:     Study Case Energetical consumption
+Description:  Example of the usage of numpy.
+
+Author:       Miguel Orlando Ledezma Arévalo
+Date:         2025-06-02
+Status:       [ Finished ]
+'''
+
 import numpy as np
-
-
 
 consumo = np.array([
     [12.5, 13.2, 11.9, 14.0, 13.5, 15.0, 14.3],

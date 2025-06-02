@@ -1,4 +1,14 @@
 '''
+Session:      Session 6        
+Exercise:     Leading Numbers
+Description:  Delete the duplicated values of a string chain.
+
+Author:       Miguel Orlando Ledezma Arévalo
+Date:         2025-06-02
+Status:       [ Finished ]
+'''
+
+'''
 Un número en una lista es "líder" si es
 estrictamente mayor que todos los
 elementos a su derecha. Dada una lista de
