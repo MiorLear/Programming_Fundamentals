@@ -74,19 +74,35 @@ Cuestionario.
 '''
 
 # Pregunta 1
-
+print("\n")
+print("Pregunta 1")
 print (f"El consumo del hogar 5 el día viernes es {consumo[4,4]} kWh")
-print (f"Consumo de los ultimos 3 hogares el domingo {consumo[-3:,6]} kWh")
-print(f"Promedio de consumo en fines de semana: {np.mean(consumo[:, [5, 6]]):.2f} kWh")
+print("\n")
 
+print("Pregunta 2")
+print (f"Consumo de los ultimos 3 hogares el domingo {consumo[-3:,6]} kWh")
+print("\n")
+
+print("Pregunta 3")
+print(f"Promedio de consumo en fines de semana: {np.mean(consumo[:, [5, 6]]):.2f} kWh")
+print("\n")
+
+print("Pregunta 4")
 desviaciones_por_dia = np.std(consumo, axis=0)
 dia_mayor_desviacion = np.argmax(desviaciones_por_dia)
 print(f"El dia con mayor desviacion estandar es el dia {dia_mayor_desviacion} con un valor de {desviaciones_por_dia[dia_mayor_desviacion]:.2f}")
+print("\n")
 
+print("Pregunta 5")
 consumo_total_hogar = np.sum(consumo, axis=1)
 indices_menor_consumo = np.argsort(consumo_total_hogar)[:3]
 valores_menor_consumo = consumo_total_hogar[indices_menor_consumo]
 print(f"Indices de los 3 hogares con menor consumo: {indices_menor_consumo}")
 print(f"Valores de consumo total: {valores_menor_consumo}")
+print("\n")
 
-
+print("Pregunta 6")
+hogar3 = consumo[2]
+hogar3_aumento = hogar3 * 1.10
+nuevo_total_hogar3 = np.sum(hogar3_aumento)
+print(f"Nuevo consumo total semanal del hogar 3 con aumento del 10%: {nuevo_total_hogar3:.2f}")
