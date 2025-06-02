@@ -18,8 +18,8 @@ numchain = input("Type the num chain: ")
 numchain = numchain.split(" ")
 numchain = numchain[::-1]
 prev = list()
-i = 0
 result = list()
+i = 0
 for x in numchain:
     prev.append(x)
     if i == 0:
